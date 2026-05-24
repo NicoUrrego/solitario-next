@@ -230,7 +230,7 @@ export default function Page() {
       (targetPile.length > 0 &&
         targetPile[targetPile.length - 1].faceUp &&
         isRed(targetPile[targetPile.length - 1].suit) !==
-          isRed(card.suit) &&
+        isRed(card.suit) &&
         targetPile[targetPile.length - 1].value === card.value + 1);
 
     if (!canMove) return;
@@ -267,7 +267,7 @@ export default function Page() {
       (targetPile.length > 0 &&
         targetPile[targetPile.length - 1].faceUp &&
         isRed(targetPile[targetPile.length - 1].suit) !==
-          isRed(firstCard.suit) &&
+        isRed(firstCard.suit) &&
         targetPile[targetPile.length - 1].value === firstCard.value + 1);
 
     if (!canMove) {
@@ -358,11 +358,10 @@ export default function Page() {
 
             <div
               onClick={handleWasteClick}
-              className={`flex h-36 w-24 cursor-pointer items-center justify-center rounded-2xl border-2 shadow-lg transition ${
-                selected?.type === "waste"
+              className={`flex h-36 w-24 cursor-pointer items-center justify-center rounded-2xl border-2 shadow-lg transition ${selected?.type === "waste"
                   ? "border-yellow-300"
                   : "border-transparent"
-              } bg-white`}
+                } bg-white`}
             >
               {waste.length > 0 ? (
                 <CardComponent card={waste[waste.length - 1]} />
@@ -424,13 +423,12 @@ export default function Page() {
                   <div
                     key={card.id}
                     onClick={() => handleTableauClick(pileIndex, cardIndex)}
-                    className={`absolute left-0 transition-transform hover:translate-y-[-2px] ${
-                      selected?.type === "tableau" &&
-                      selected.pileIndex === pileIndex &&
-                      selected.cardIndex === cardIndex
+                    className={`absolute left-0 transition-transform hover:translate-y-[-2px] ${selected?.type === "tableau" &&
+                        selected.pileIndex === pileIndex &&
+                        selected.cardIndex === cardIndex
                         ? "ring-4 ring-yellow-300"
                         : ""
-                    }`}
+                      }`}
                     style={{ top: `${cardIndex * 32}px` }}
                   >
                     <CardComponent card={card} />
@@ -476,9 +474,8 @@ function CardComponent({ card }: { card: Card }) {
 
   return (
     <div
-      className={`flex h-32 w-20 flex-col justify-between rounded-xl border border-gray-300 bg-white p-2 shadow-xl ${
-        isRed(card.suit) ? "text-red-600" : "text-black"
-      }`}
+      className={`flex h-32 w-20 flex-col justify-between rounded-xl border border-gray-300 bg-white p-2 shadow-xl ${isRed(card.suit) ? "text-red-600" : "text-black"
+        }`}
     >
       <div className="text-lg font-bold leading-none">
         {valueLabel(card.value)}
