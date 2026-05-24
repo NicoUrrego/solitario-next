@@ -378,11 +378,6 @@ export default function Page() {
               onClick={() => {
                 if (selected?.type === "waste") {
                   moveWasteToFoundation(index);
-                }
-              }}
-              onClick={() => {
-                if (selected?.type === "waste") {
-                  moveWasteToFoundation(index);
                   return;
                 }
 
