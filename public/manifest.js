@@ -1,0 +1,24 @@
+export default {
+    name: "Solitario",
+    short_name: "Solitario",
+    description:
+        "Esta es mi app de Solitario Clásico, creada con Next.js y TypeScript. Disfruta jugando al clásico juego de cartas en tu dispositivo.",
+    start_url: "/",
+    display: "standalone",
+    background_color: "#0a84ff",
+    theme_color: "#0a84ff",
+    icons: [
+        {
+            src: "SolitaireIcon.png",
+            sizes: "192x192",
+            type: "image/png",
+            purpose: "any"
+        },
+        {
+            src: "SolitaireIcon.png",
+            sizes: "512x512",
+            type: "image/png",
+            purpose: "maskable"
+        }
+    ]
+};

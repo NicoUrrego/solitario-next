@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import "./globals.css";
+import SWRegistration from "./SWRegistration";
 
 export const metadata: Metadata = {
   title: "Solitaire Collection",
   description: "Klondike y Spider Solitaire en Next.js PWA",
+  manifest: "/manifest.json",
 };
 
 export default function RootLayout({
