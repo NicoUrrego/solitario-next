@@ -9,13 +9,13 @@ export default {
     theme_color: "#0a84ff",
     icons: [
         {
-            src: "SolitaireIcon.png",
+            src: "/SolitaireIcon.png",
             sizes: "192x192",
             type: "image/png",
             purpose: "any"
         },
         {
-            src: "SolitaireIcon.png",
+            src: "/SolitaireIcon.png",
             sizes: "512x512",
             type: "image/png",
             purpose: "maskable"
