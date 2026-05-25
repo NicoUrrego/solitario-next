@@ -59,6 +59,7 @@ export default function RootLayout({
             </div>
           </footer>
         </div>
+        <SWRegistration />
       </body>
     </html>
   );
